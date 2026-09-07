@@ -1,0 +1,102 @@
+/* =========================================
+   PUBLIC NAVBAR
+========================================= */
+
+.public-nav-menu {
+  display: flex;
+}
+
+.public-nav-right {
+  display: flex;
+}
+
+.mobile-menu-button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  color: #333333;
+  cursor: pointer;
+  padding: 5px;
+}
+
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu-link {
+  display: block;
+  text-decoration: none;
+  font-weight: 600;
+  color: #333333;
+  padding: 13px 5px;
+}
+
+.mobile-menu-divider {
+  border-top: 1px solid #e5e5e5;
+  margin: 8px 0;
+}
+
+.mobile-daftar-button {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  color: #FAF8F5;
+  background-color: #66745D;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.mobile-logout-button {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  color: white;
+  background-color: #A83225;
+  font-weight: 600;
+}
+
+
+/* =========================================
+   RESPONSIVE HP
+========================================= */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .public-logo {
+    width: 120px !important;
+  }
+
+  /* Sembunyikan menu desktop */
+  .public-nav-menu,
+  .public-nav-right {
+    display: none !important;
+  }
+
+  /* Tampilkan hamburger */
+  .mobile-menu-button {
+    display: block;
+  }
+
+  /* Menu mobile */
+  .mobile-menu {
+    display: block;
+    width: 100%;
+    padding: 15px 20px 20px;
+    background-color: white;
+    border-top: 1px solid #eeeeee;
+  }
+
+}
