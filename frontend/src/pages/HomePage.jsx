@@ -36,16 +36,17 @@ function HomePage() {
           {KATEGORI_DATA.map((kategori) => (
             <div className="col mb-3" key={kategori.nama}>
               <Link to={`/toko?kategori=${encodeURIComponent(kategori.nama)}`} className="text-decoration-none text-dark h-100 d-block">
-                <div className="py-2 px-3 rounded-4 text-center h-100 bg-white" style={{ boxShadow: '0 0 10px lightgrey'}}>
+                <div className="text-center h-100 pt-4">
                   {kategori.gambar ? (
                     <img 
                       src={kategori.gambar} 
-                      style={{ width: '85px', height: '85px', objectFit: 'contain' }} 
+                      className='rounded-pill'
+                      style={{ width: '105px', height: '105px', objectFit: 'contain' }} 
                     />
                   ) : (
                     <p className='fs-1 mb-1'>{kategori.icon}</p>
                   )}
-                  <p className='fw-semibold fs-5 mb-1'>{kategori.nama}</p>
+                  <p className='fw-semibold fs-5 mb-1 mt-3'>{kategori.nama}</p>
                   <p className='text-muted small mb-0'>{getJumlahProduk(kategori.nama)} Produk</p>
                 </div>
               </Link>
